@@ -10,9 +10,16 @@ function getParams() {
     var query = searchParamsArr[0].split('=').pop();
     var format = searchParamsArr[1].split('=').pop();
     
-    // searchApi(query, format)
+    searchApi(query, format)
 }
 
+function printResults(resultObj) {
+    console.log(resultObj)
+
+    
+}
+
+// searchApi function 
 function searchApi(query, format) {
     var locQueryUrl = 'https://www.loc.gov/search/?fo=json';
 
@@ -63,7 +70,7 @@ function handleSearchFormSubmit(event) {
         return;
     }
     
-    // searchApi(searchInputVal, formatInputVal)
+    searchApi(searchInputVal, formatInputVal)
 }
 
 
