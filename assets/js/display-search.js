@@ -25,6 +25,16 @@ function printResults(resultObj) {
     resultBody.classList.add('card-body');
     resultCard.append(resultBody)
 
+    var titleEl = document.createElement('h3');
+    titleEl.textContent = resultObj.title;
+
+    var bodyContentEl = document.createElement('p');
+    bodyContentEl.innerHTML = '<strong>Date:</strong> '+ resultObj.date + '<br/>'
+
+    // append topic title, bodyContentEl, 
+    resultBody.append(titleEl, bodyContentEl)
+
+    // append result content to the page
     resultContentEl.append(resultCard)
 }
 
