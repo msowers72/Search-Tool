@@ -16,7 +16,9 @@ function getParams() {
 function printResults(resultObj) {
     console.log(resultObj)
 
-    
+    // set up `<div>` to hold result content
+    var resultCard = document.createElement('div');
+    resultCard.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
 }
 
 // searchApi function 
