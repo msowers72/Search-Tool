@@ -19,6 +19,13 @@ function printResults(resultObj) {
     // set up `<div>` to hold result content
     var resultCard = document.createElement('div');
     resultCard.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
+
+    // set up <div> to hold the resultbody
+    var resultBody = document.createElement('div');
+    resultBody.classList.add('card-body');
+    resultCard.append(resultBody)
+
+    resultContentEl.append(resultCard)
 }
 
 // searchApi function 
