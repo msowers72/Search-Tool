@@ -31,6 +31,14 @@ function printResults(resultObj) {
     var bodyContentEl = document.createElement('p');
     bodyContentEl.innerHTML = '<strong>Date:</strong> '+ resultObj.date + '<br/>'
 
+    if(resultObj.subject) {
+        bodyContentEl.innerHTML +=
+        '<strong>Subjects:</strong> ' + resultObj.subject.join(', ') + '<br/>'
+    } else {
+        bodyContentEl.innerHTML +=
+        '<strong>Subjects:</strong> No subject for this entry.';
+    }
+
     // append topic title, bodyContentEl, 
     resultBody.append(titleEl, bodyContentEl)
 
