@@ -37,7 +37,7 @@ As a user, I can submit a search query form the application to request data and 
 <!-- ![Tux, the Linux mascot](https://img.shields.io/badge/License-MIT-green) -->
   
  ## Deployed
- [Search-Tool](https://msowers72.github.io/Word-Guess-Game/)
+ [Search-Tool](https://msowers72.github.io/Search-Tool/)
  
  
  ![images](./assets/img/01-homepage.png) 
