@@ -4,7 +4,8 @@ var searchFormEl = document.querySelector('#search-form')
 
 function getParams() {
     // Get the search params out of the URL (i.e. `?q=london&format=photo`) and convert it to an array (i.e. ['?q=london', 'format=photo'])
-    var searchParamsArr = document.location.search.split('&');   
+    var searchParamsArr = document.location.search.split('&'); 
+   
 
     // get the query and format values
     var query = searchParamsArr[0].split('=').pop();
@@ -85,7 +86,7 @@ function searchApi(query, format) {
         console.log(locRes)
 
         if(!locRes.results.length) {
-            console.llog('No results found!');
+            console.log('No results found!');
             resultContentEl.innerHTML = '<h3>No results found, search again!<h3>'
         } else {
             resultContentEl.textContent = '';

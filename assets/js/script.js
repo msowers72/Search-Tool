@@ -14,6 +14,7 @@ function handleSearchFormSubmit(event) {
     }
 
     var queryString = './search-results.html?q=' + searchInputVal + '&format=' + formatInputVal
+    
 
     location.assign(queryString)
 }
