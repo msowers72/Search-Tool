@@ -19,15 +19,16 @@
 <msowers72@yahoo.com>
 
 ## Description:
-Word guessing game where players have 10 seconds to guess the correct word.
+This application searches and displays results from the Library of Conress API.
 
 ## Usage
-As a user, I want to try and guess a word by filling in a number of blanks that match the number of letters in that word.
+As a user, I can submit a search query form the application to request data and receive a response from the Library of Congress.
 
 ## Built-With
 * HTML
 * CSS
 * JavaScript
+* Google-Fonts
 
    
 
@@ -36,7 +37,7 @@ As a user, I want to try and guess a word by filling in a number of blanks that 
 <!-- ![Tux, the Linux mascot](https://img.shields.io/badge/License-MIT-green) -->
   
  ## Deployed
- [Word-Guess-Game](https://msowers72.github.io/Word-Guess-Game/)
+ [Search-Tool](https://msowers72.github.io/Word-Guess-Game/)
  
  
  ![images](./assets/img/01-homepage.png) 
