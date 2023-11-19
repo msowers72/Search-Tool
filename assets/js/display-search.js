@@ -39,8 +39,22 @@ function printResults(resultObj) {
         '<strong>Subjects:</strong> No subject for this entry.';
     }
 
-    // append topic title, bodyContentEl, 
-    resultBody.append(titleEl, bodyContentEl)
+    if(resultObj.description) {
+        bodyContentEl.innerHTML +=
+        '<strong>Description:</strong> ' + resultObj.description[0]
+    } else {
+        bodyContentEl.innerHTML +=
+        '<strong>Description:</strong> No description for this entry.'
+    }
+
+    var linkButtonEl = document.createElement('a')
+    linkButtonEl.textContent = 'Read More';
+    linkButtonEl.setAttribute('href', resultObj.url);
+    linkButtonEl.classList.add('btn', 'btn-dark');
+
+    resultBody.append(titleEl, bodyContentEl, linkButtonEl)
+
+    
 
     // append result content to the page
     resultContentEl.append(resultCard)
